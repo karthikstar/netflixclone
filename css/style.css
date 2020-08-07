@@ -1,10 +1,12 @@
 /* Global Styles */
+/* on the root scope this will be the pri color */
 :root {
 	--primary-color: #e50914;
 	--dark-color: #141414;
 	--light-color: #f4f4f4;
 }
 
+/* resetting some default settings */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -48,6 +50,7 @@ img {
 	position: relative;
 	background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
 }
+/* basically 100vh represents the full viewing screen of a user, divide it into 100 slicies and x 93 is what this represents ^ */
 
 .showcase::after {
 	content: '';
@@ -292,6 +295,7 @@ img {
 }
 
 /* Buttons */
+/* utility stuff */
 .btn {
 	display: inline-block;
 	background: var(--primary-color);
@@ -332,6 +336,9 @@ img {
 	margin-left: 1rem;
 }
 
+/* MEDIA QUERIES */
+/* one for 960px or less, and one for 760px and less */
+
 @media (max-width: 960px) {
 
 		.showcase {
@@ -360,7 +367,8 @@ img {
 	.footer .footer-cols {
 		grid-template-columns: repeat(2, 1fr);
 	}
-a	.btn-xl {
+
+	.btn-xl {
 		font-size: 1.5rem;
 		padding: 1.4rem 2rem;
 		text-transform: uppercase;
